@@ -32,8 +32,9 @@ console.log(data)
 //rest
 
 function sum(num,...values){
-    console.log(num,values);
-    console.log(num + values);
+    console.log(num,...values);
+    console.log(num + values.reduce((a,b)=>a-b));
+    console.log(typeof(values)); 
     return num + values
 }
 
